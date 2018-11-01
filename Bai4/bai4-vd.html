@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	div {
+		width:200px;
+		height: 200px;
+		display: inline-block;
+	}
+	#div1{
+		background:red;
+		border: 20px 40px 30px 60px; 
+		margin: 20px 50px 30px 70px;
+		border:20px;
+		padding: 1px;
+		/*theo chieu kim dongho:top,right,bottom,left*/
+	}
+	#div2{
+		background-color: green;
+	}
+	.name {
+		width: 500px;
+		height: 500px;
+		background: red;
+		position: relative;
+		margin -left: 100px;
+		top: 10px;
+		right:10px;
+		z-index: 3;
+	}
+	.child{
+		width: 100px;
+		height: 100px;
+		background: green;
+		position: fixed;
+		z-index: 1;
+	}
+	</style>
+</head>
+<body style="height" :1000px>
+	<div id="div1">
+		<p>
+			Lorem;
+		</p>
+	</div>
+	<div id="div2">
+		<p>
+			Lorem ipsum dolor sit amet.
+		</p>
+	</div>
+	<div class ="name">
+	<div class="child">
+	</div>
+</body>
+</html>

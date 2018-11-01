@@ -1,0 +1,111 @@
+.logo>img{
+	width: 200px;
+	height:auto;
+}
+.logo{
+	width: 30%;
+	float: left;
+	clear: both;
+
+}
+.menu-duoi>.img1{
+	height: 30px;
+	
+}
+.menu-duoi{
+	float: right;
+	width: 70%;
+	text-align: right;
+}
+.hr1{
+	margin-bottom: 5%;
+	width: 100%;
+}
+.menu-duoi>a{
+	text-decoration: none;
+}
+.menu{
+	float: left;
+	width: 20%;
+	text-decoration: none;
+}
+.center{
+	width: 60%;
+}
+.quangcao{
+	width: 20%;
+}
+.menu>.img1{
+	float: left;
+	height: 30px;
+	width: 15%;
+}	
+.name{
+	text-decoration: none;
+	float: right;
+	width: 80%;
+	margin-left: 5%;
+}
+.tr{
+	text-decoration: none;
+	float: right;
+	width: 80%;
+	margin-left: 5%;
+	margin-top: 6%;
+}
+.qdbl{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+.nq{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+.dggd{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+.web{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+.java{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+.taocv{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+.kttd{
+	text-decoration: none;
+	float: left;
+	width: 100%;
+}
+
+.quangcao{
+	float: right;
+	width: 15%;
+	border: 1px solid;
+    box-shadow: 0px 0px 5px 5px #888888;
+}
+.center{
+	width: 60%;
+	float: left;
+	border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px #888888;
+    margin-bottom: 50%;
+    padding-bottom: 40%;
+}
+.img2{
+	float: left;
+	height: 15px;
+	width: 10%;
+}

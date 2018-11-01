@@ -5,14 +5,18 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<style type="text/css">
+	.item:hover{
+		background: red;
+	}
 	#menu{
 		background: pink;
-		height: 42px;
+		/*height: 42px;*/
 		padding-left: 0;
 	}
 	.item{
 		list-style: none;
 		display: inline-block;
+		padding: 5px;
 		
 	}
 	.item>a{
@@ -21,21 +25,50 @@
 		padding-right: 5px;
 		color: #fff;
 	}
-		.item:hover{
-
-		}
+	.item:hover{
 
 	}
+	.menu .item #menu-item {
+		position: relative;
+	}
+	.submenu{
+		position: absolute;
+		display: none;
+	}
+
+	#menu-item>.item-sub {
+		list-style: none;
+		text-decoration: none;
+	}
+	#menu-item> .item-sub:hover {
+		padding: 5px;
+		background: red;
+	}
+	.item>a>ul>li:hover{
+		display: block;
+	}
+
 </style>
 </head>
 <body>
 	<nav>
 		<ul id="menu">
 			<li class="item">
-				<a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj76PaA7oreAhUBw7wKHRnqBooQjRx6BAgBEAU&url=https%3A%2F%2Fnews.zing.vn%2Fsamsung-tung-video-gioi-thieu-galaxy-tab-s3-post731556.html&psig=AOvVaw2OhIqDla6Uo1Hcspwk_DtY&ust=1539775033525030"><i class="fas fa-home"></i>Home</a>
+				<a href="?"><i class="fas fa-home"></i>Home</a>
 			</li>
-			<li class="item">
+			<li class="item" id="menu-item">
 				<a href="?">About</a>
+				<ul class="submenu">
+					<li class="item-sub">
+						<a href="?">Java</a>	
+					</li>
+					<li class="item-sub">
+						<a href="?">Html</a>	
+					</li>
+					<li class="item-sub">
+						<a href="?">Css</a>	
+					</li>
+				</ul>
 			</li>
 			<li class="item">
 				<a href="?">News</a>

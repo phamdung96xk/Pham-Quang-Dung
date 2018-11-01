@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+	.item:hover{
+		background: red;
+	}
+	#menu{
+		background: pink;
+		/*height: 42px;*/
+		padding-left: 0;
+	}
+	.item{
+		list-style: none;
+		display: inline-block;
+		padding: 5px;
+		
+	}
+	.item>a{
+		text-decoration: none;
+		padding-left: 5px;
+		padding-right: 5px;
+		color: #fff;
+	}
+	.item:hover{
+
+	}
+	.menu .item #menu-item {
+		position: relative;
+	}
+	.submenu{
+		position: absolute;
+		display: none;
+	}
+
+	#menu-item>.item-sub {
+		list-style: none;
+		text-decoration: none;
+	}
+	#menu-item> .item-sub:hover {
+		padding: 5px;
+		background: red;
+	}
+	.item>a>ul>li{
+		text-decoration: none;
+	}
+
+</style>
+</head>
+<body>
+	<nav>
+		<ul id="menu">
+			<li class="item">
+				<a href="?"><i class="fas fa-home"></i>Home</a>
+			</li>
+			<li class="item" id="menu-item">
+				<a href="?">About</a>
+				<ul class="submenu">
+					<li class="item-sub">
+						<a href="?">Java</a>	
+					</li>
+					<li class="item-sub">
+						<a href="?">Html</a>	
+					</li>
+					<li class="item-sub">
+						<a href="?">Css</a>	
+					</li>
+				</ul>
+			</li>
+			<li class="item">
+				<a href="?">News</a>
+			</li>
+			<li class="item">
+				<a href="?">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
