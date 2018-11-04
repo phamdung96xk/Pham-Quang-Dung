@@ -59,17 +59,19 @@
 	<button onclick="bai3()">Bài 3</button>
 	<script type="text/javascript">
 	function bai3(){
-	alert('Lưu ý:khi tổng dãy số bạn vừa nhập lớn hơn 100 chương trình sẽ dừng lại')
-	var sum = 0;
-	do{
-		var n =parseInt(prompt("Nhập vào số:"));
-		sum += n;
-		if (sum > 100) 
-			break;
-
-	}while (n > 0);
-	alert('Tổng:' +sum)	
-	}
+        var sum = 0;
+        do {
+             var n =parseInt(prompt("Nhập n = "));
+            
+            if (n <= 0) {
+                alert('Bạn phải nhập số nguyên dương!');
+            }
+        } while (n <= 0);
+        for (var i = 1; i <= n; i++) {
+            sum +=  1 / i;
+        }
+        alert('Tổng s = ' + sum);
+    }
 	</script>
 	<hr>
 	<button onclick="bai4()">Bài 4</button>
@@ -118,18 +120,19 @@
 	<button onclick="bai6()">Bài 6</button>
 	<script type="text/javascript">
 	function bai6(){
-	alert('Lưu ý:khi tổng dãy số bạn vừa nhập lớn hơn 100 chương trình sẽ dừng lại');
-	var sum = 0;
-	do{
-		var n =parseInt(prompt("Nhập vào số:"));
-		sum += n;
-		if (sum > 100) 
-			break;
+		var s=0;
+	do {
+           var n =parseInt(prompt("Nhập số nguyên dương n = "));
+            if (n <= 0) {
+           alert('Bạn phải nhập vào số nguyên dương!');
+            }
+        } while (n <= 0);
+           for (var i = 0; i <= n; i++) {
+           	s=s+i;
+           }      
+           alert('Tổng dãy số trên là:' +s);
+       }
 
-	}while (n > 0);
-	alert('Tổng:' +sum)	
-	document.write('Tổng:' +sum)
-	}
 	</script>
 	<hr>
 	<button onclick="bai7()">Bài 7</button>
