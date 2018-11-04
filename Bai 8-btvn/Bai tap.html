@@ -135,18 +135,14 @@
 	<button onclick="bai7()">Bài 7</button>
 	<script type="text/javascript">
 	function bai7(){
-		alert('Lưu ý:Chương trình sẽ chỉ dừng lại khi số bạn vừa nhập không phải số nguyên'); 
-		var dem=0;
-		do{
-  	 var n =prompt("Nhập vào số:");
-		dem =dem+1;
-	}while(parseInt(n) == n)
-		alert('Có tất cả:'+ (dem-1) +'(số nguyên)'+'trong dãy bạn vừa nhập'+'.');
-		alert('Số bạn vừa nhập:' +n)
-		if (Number(n) != n) {}
-		alert('Số:'+ n + '(không phải số nguyên)');
-	}
-
+		  var count=0;
+        for (var i = 1; i < 100; i++) {
+            if(i%3==0||i%7==0){
+                count++;
+            }
+        }
+        alert('Số lượng các số chia hết cho 3 hoặc 7 trong khoảng 1 đến 100 là: '+count);
+    }
 
 	</script>
 	<hr>
