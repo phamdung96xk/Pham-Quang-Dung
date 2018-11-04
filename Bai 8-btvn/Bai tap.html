@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="Bai tap.css">
+</head>
+<body>
+	<h3 class="hw">HOME WORK</h3>
+	<script type="text/javascript">
+	nc=prompt('Mời bạn nhập vào tên của bạn:(Lưu ý:xin hãy nhập cả họ và tên và có dấu)')
+	alert('Tên của bạn đã được lưu!')
+	</script>
+	<button onclick="bai1()">Bài 1</button>
+	<br>
+	<script type="text/javascript">
+		function bai1(){
+			for (var i = 1; i <=7; i++) {
+				for (var j =1; j<=7; j++) {
+					if (i>=j) {
+
+						document.write("*");
+					}	
+				}
+				document.write("<br>");
+			}
+			document.write("<hr>");
+			for (var i = 1; i <=7; i++) {
+				for (var j =1; j<=7; j++) {
+					// if (i==1||i==n||j==1||j==n||i==j) {
+						document.write("*");
+					}
+					
+				document.write("<br>");
+			}
+			document.write("<hr>");
+				for (var i = 7; i >=1; i--) {
+				for (var j =i; j>=1; j--) {
+					if (i>=j) {
+						document.write("*");
+					}	
+				}
+				document.write("<br>");
+		}
+	}
+	</script>
+	<hr>
+	<button onclick="bai2()">Bài 2</button>
+	<script type="text/javascript">
+	function bai2(){
+	var sum = 0;
+	for (var i = 0; i <= 10; i++) {
+			sum +=i*2;
+		}
+	alert('Tổng 10 số chẵn đầu tiên là:'+sum)
+	}
+	</script>
+	<hr>
+	<button onclick="bai3()">Bài 3</button>
+	<script type="text/javascript">
+	function bai3(){
+	alert('Lưu ý:khi tổng dãy số bạn vừa nhập lớn hơn 100 chương trình sẽ dừng lại')
+	var sum = 0;
+	do{
+		var n =parseInt(prompt("Nhập vào số:"));
+		sum += n;
+		if (sum > 100) 
+			break;
+
+	}while (n > 0);
+	alert('Tổng:' +sum)	
+	}
+	</script>
+	<hr>
+	<button onclick="bai4()">Bài 4</button>
+	<script type="text/javascript">
+	function bai4(){
+        var sum = 0;
+        do {
+            var m =parseInt(prompt("Nhập số nguyên m = "));
+            var n =parseInt(prompt("Nhập số nguyên n = "));
+            if (m < n) {
+                document.write('Bạn phải nhập m >= n');
+            }
+        } while (m < n);
+        var k = parseInt(prompt("Nhập số nguyên k = "));
+        
+        for (var i = m - 1; i >= n + 1; i--) { 
+            if (i % k == 0) {
+                sum = sum + i;
+            }
+           }
+       alert('Tổng các số chia hết cho k trong khoảng m đến n là: ' + sum);
+
+    }
+	</script>
+	<hr>
+	<button onclick="bai5()">Bài 5</button>
+	<script type="text/javascript">
+	function bai5(){
+		
+        var sum = 0;
+        var giaiThua = 1;
+        do {
+           var n =parseInt(prompt("Nhập số nguyên dương n = "));
+            if (n <= 0) {
+           alert('Bạn phải nhập vào số nguyên dương!');
+            }
+        } while (n <= 0);
+        for (var i = 1; i <= n; i++) {
+            giaiThua *= i;
+            sum += (i / giaiThua);
+        }
+        alert('Tổng = ' + sum);
+    }
+	</script>
+	<hr>
+	<button onclick="bai6()">Bài 6</button>
+	<script type="text/javascript">
+	function bai6(){
+	alert('Lưu ý:khi tổng dãy số bạn vừa nhập lớn hơn 100 chương trình sẽ dừng lại');
+	var sum = 0;
+	do{
+		var n =parseInt(prompt("Nhập vào số:"));
+		sum += n;
+		if (sum > 100) 
+			break;
+
+	}while (n > 0);
+	alert('Tổng:' +sum)	
+	document.write('Tổng:' +sum)
+	}
+	</script>
+	<hr>
+	<button onclick="bai7()">Bài 7</button>
+	<script type="text/javascript">
+	function bai7(){
+		alert('Lưu ý:Chương trình sẽ chỉ dừng lại khi số bạn vừa nhập không phải số nguyên'); 
+		var dem=0;
+		do{
+  	 var n =prompt("Nhập vào số:");
+		dem =dem+1;
+	}while(parseInt(n) == n)
+		alert('Có tất cả:'+ (dem-1) +'(số nguyên)'+'trong dãy bạn vừa nhập'+'.');
+		alert('Số bạn vừa nhập:' +n)
+		if (Number(n) != n) {}
+		alert('Số:'+ n + '(không phải số nguyên)');
+	}
+
+
+	</script>
+	<hr>
+	<div>
+	<h3>Người chấm :</h3>
+	</div>
+	<script class="tennc" type="text/javascript">
+		document.write(nc);
+	</script>
+	<br>
+	<hr class="hr3">
+</body>
+</html>
