@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<h4>Cỡ chữ</h4>		
+	<input type="button" value="Mặc định" onclick="change_font_size1()"/>
+	<input type="button" value="Lớn" onclick="change_font_size2()"/>
+	<input type="button" value="Nhỏ" onclick="change_font_size3()"/>
+	<div id="message">
+		<p>Khi người dùng nhấp chuột vào nút Lớn hoặc Nhỏ sẽ tăng hoặc giảm cỡ chữ trên hình vẽ. Cuối cùng họ cũng có thể nhấn vào nút Mặc Định để trả cỡ chữ về giá trị ban đầu. Chúng ta sẽ cho phép người dùng nhấp chuột nhiều lần vào nút, và mỗi lần nhấp cỡ chữ sẽ tăng hoặc giảm dần lên. Ta sẽ cho tăng cỡ chữ lên 40% mỗi khi người dùng nhấp chuột vào nút “Lớn” hoặc nhỏ đi 40% mỗi khi nhấp chuột vào nút “Nhỏ”.</p>
+	</div>	
+	<script type="text/javascript">
+		var message = document.getElementById('message');
+		
+		function change_font_size1()
+		{
+			message.style.fontSize = '16px';
+		}
+		function change_font_size2()
+		{
+			var fontSizeOld = window.getComputedStyle(message, null).getPropertyValue('font-size');
+			var fontSizeNew = parseFloat(fontSizeOld) + parseFloat(fontSizeOld)*0.4; 
+			message.style.fontSize = fontSizeNew+'px';
+		}
+		function change_font_size3()
+		{
+			var fontSizeOld = window.getComputedStyle(message, null).getPropertyValue('font-size');
+			var fontSizeNew = parseFloat(fontSizeOld) - parseFloat(fontSizeOld)*0.4; 
+			message.style.fontSize = fontSizeNew+'px';
+		}
+	</script>
+</body>
+</html>

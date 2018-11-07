@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="Bai 2.css">
+</head>
+<body>
+	
+	<table class="table1" border="1">
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quidem?</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, dolorum, nam.</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet.</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, illum.</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing.</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum.</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet, consectetur.</p></td>
+</tr>
+<tr class="tr1">
+	<td class="td1"><input class="checkbox1" type="checkbox" name="checkbox">
+	<td class="td2"><p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing.</p></td>
+</tr>
+</table>
+		<input type="button" class="a1" id="btn1" value="Check all"/>
+        <input type="button" class="a2" id="btn2" value="Uncheck all"/>
+<script type="text/javascript">
+		document.getElementById("btn1").onclick = function () 
+            {
+               
+                var checkboxes = document.getElementsByName('checkbox');
+ 
+                for (var i = 0; i < checkboxes.length; i++){
+                    checkboxes[i].checked = true;
+                }
+            };
+ 
+            document.getElementById("btn2").onclick = function () 
+            {
+                var checkboxes = document.getElementsByName('checkbox');
+                for (var i = 0; i < checkboxes.length; i++){
+                    checkboxes[i].checked = false;
+                }
+            };
+
+</script>	
+</body>
+</html>
