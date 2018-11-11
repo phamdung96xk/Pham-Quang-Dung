@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>A Time Slide Show</title>
+<script type=”text/javascript”>
+<!–hide me
+var the_images = new Array();
+the_images[0] = new Image();
+the_images[0].src = “\hinh1.jpg”;
+the_images[1] = new Image();
+the_images[1].src = “\hinh2.jpg”;
+the_images[2] = new Image();
+the_images[2].src = “\hinh3.jpg”;
+var the_timeout;
+function rotateImage(index)
+{
+window.document.my_image.src = the_images[index].src;
+index++;
+if(index >= the_images.length)
+{
+index = 0;
+}
+var the_function_string = “rotateImage(“+index+”);”;
+the_timeout = setTimeout(the_function_string,1000);
+}
+//show me –>
+</script>
+</head>
+<body onLoad=”rotateImage(0);”>
+<img name=”my_image” src=”\hinh1.jpg”>
+</body>
+</html>
+<form>
+
+<input type=”button” value=”Bắt đầu thay đổi hình” onClick=”rotateImage(0);”>
+
+<input type=”button” value=”Dừng thay đổi hình” onClick=”clearTimeout(the_timeout);”>
+
+</form>

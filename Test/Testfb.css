@@ -1,0 +1,62 @@
+.button{
+	border: 1px solid #F4A460;
+	background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+    background-color:#0C0C0C;
+    background-size: 100%;
+    height:100%;
+    width:100%;
+    padding-left: 2%;
+
+}
+#div1{
+	background-color: white;
+	margin-left: 2%;
+	width: 90%;
+	margin-bottom: 4%;
+	
+	 
+}
+#div2{
+	display: none;
+	background-color: white;
+	margin-left: 2%;
+	width: 90%;
+	margin-bottom: 4%;
+
+}
+#div3{
+	display: none;
+	background-color: white;
+	margin-left: 2%;
+	width: 90%;
+	margin-bottom: 4%
+
+}
+#tab1{
+	width: 8%;
+	height: 30px;
+	color: white;
+	background-color: #555555;
+	border-radius: 5%;
+}
+#tab2{
+	width: 8%;
+	height: 30px;
+	color: white;
+	background-color: #555555;
+	border-radius: 5%;
+}
+#tab3{
+	width: 8%;
+	height: 30px;
+	color: white;
+	background-color: #555555;
+	border-radius: 5%;
+}
+#divtong{
+	background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+    background-color:#0C0C0C;
+    background-size: 100%;
+    
+  
+}

@@ -1,0 +1,120 @@
+<html>
+  <body>
+ <!--    <input type="text" value="Thẻ cần lấy" class="website"/>
+    <div>
+        <input type="text" value="Thẻ không cần Lấy" class="website"/>
+        <input type="text" value="Thẻ không cần lấy"/>
+    </div> -->
+   <!--  <script>
+      var selectors = document.getElementsByClassName("website");
+      selectors[0].style.border="1px solid red";
+      function change()
+          {
+             // Lấy đối tượng
+             var object = document.getElementById("object");
+          
+             // lấy thuộc tính type
+             var type = object.type;
+         
+             // kiểm tra thuộc tính type và thay đổi
+            if (type == "button"){
+           
+               object.type = 'text';
+            }
+            else{
+                object.type = "button";
+            }
+</script>
+ <input type="button" value="CLick me" onclick="change()" id="object" /> -->
+<!-- 	<input type="text" name="" id="input">
+	<p id="text" name ='Dung' age="3" school="BKHN"></p> -->
+	<!--  <script language="javascript">
+            function change_background()
+            {
+               document.getElementById("message").style.background = 'red';
+            }
+ 
+            function change_color()
+            {
+               document.getElementById("message").style.color = 'blue';
+               document.getElementById("message").style.color = 'black';
+               document.getElementById("message").style.color = 'yellow';
+               document.getElementById("message").style.color = 'white';
+               document.getElementById("message").style.color = 'red';
+            }
+ 
+            function change_height()
+            {
+               document.getElementById("message").style.height = '500px';
+            }
+ 
+            function change_font_size()
+            {
+               document.getElementById("message").style.fontSize = '500px';
+            }
+        </script>
+        <div id="message">
+          Chào mừng các bạn đến với ZentGroup
+        </div>
+        <input type="button" value="Change backgroud" onclick="change_background()"/>
+        <input type="button" value="Change color" onclick="change_color()"/>
+        <input type="button" value="Change height" onclick="change_height()"/>
+        <input type="button" value="Change fontsize" onclick="change_font_size()"/> -->
+       <!--  <input type="text" id="goZent"> -->
+       <input type="text" id="input">
+       <button id="add">Add</button>
+       <table id="content">
+       	<tr>
+       		<td></td>
+       		<td>
+       			<button>Edit</button>
+       		</td>
+       		<td>
+       			<button>Delete</button>
+       		</td>
+       	</tr>
+       	
+      </table>
+  </body>
+  
+</html>
+ <script type="text/javascript">
+ 	// var selector = document.getElementById("text");
+ 	// selector.innerHTML = 'Name: '+ selector.getAttribute('name ') + " Age:" +selector.getAttribute('age')
+ 	// var input = document.getElementById("input");
+ 	// alert(input.getAttribute('type'));
+ 	// var selector =document.getElementById("goZent");
+ 	// selector.addEventListener('blur',function(){
+ 	// 	selector.value =selector.value.toUpperCase();
+ 	// })
+ 	document.getElementById('add').addEventListener('click',function() {
+ 		var input=document.getElementById('input');
+ 		var content =document.getElementById('content')
+ 		var value = input.value;
+ 		if (value.trim() == '') {
+ 			alert('Ban phai nhap noi dung vao')
+ 			return;
+ 		}
+ 		var temp = `<tr>
+       		<td>`+value+`</td>
+       		<td>`+value+`</td>
+       		<td>
+       			<button>Edit</button>
+       		</td>
+       		<td>
+       			<button class='Delete' onclick='del(this)'>Delete</button>
+       		</td>
+       	</tr>` 
+ 		content.innerHTML += temp;
+ 		input.value="";
+ 	}); 
+ 	function del(a) {
+ 		a.parentNode.parentNode.remove();
+ 	}
+ 	document.getElementById('del').addEventListener('click',function(){
+ 		var inputs = document.getElementByTagName('input');
+ 		for (var i = input.length - 1; i >= 0; i--) {
+ 			input[i].parentNode.parentNode.remove();
+ 		}
+ 	})
+ </script>
