@@ -45,14 +45,14 @@
 			margin-left: 10%;
 		}
 		#check1{
-			width: 10%;
+			width: 2%;
 			height: 15px;
 			margin-top: 2%;
-			margin-left: 6%;
+			margin-left: 10%;
 			
 		}
 		#check2{
-			width: 10%;
+			width: 2%;
 			height: 15px;
 			margin-top: 2%;
 			
@@ -114,7 +114,7 @@
 		</div>
 		<div>
 			<label>Xác nhận mật khẩu</label>
-			<input type="password" name="password" id="password2">
+			<input type="password" name="password" id="password2" >
 			<span class="error" id="errorPassword2"> </span>
 		</div>
 	
@@ -157,12 +157,12 @@
 		    return re.test(String(email).toLowerCase());
 		}
 		function checkpass(password) {
-		    var password = document.getElementById('password');
-			var password2 = document.getElementById('password2');
+		    var password = document.getElementById('password').value;
+			var password2 = document.getElementById('password2').value;
 
 			if (password != password2) {
 			document.getElementById('errorPassword2').innerHTML = 'Mật khẩu bạn nhập không khớp.Xin vui lòng nhập lại';
-			return false;
+			return flase;
 			}
 			else return true;
 			}
@@ -213,16 +213,10 @@
 			if (password2.value.trim() == '') {
 				document.getElementById('errorPassword2').innerHTML = 'Vui lòng nhập lại mật khẩu';
 			}
-			else if(password2.value.length < 6) {
-
-				document.getElementById('errorPassword2').innerHTML = 'Mật khẩu phải lớn hơn 6 ký tự';
+			else if(
+				checkpass(password2.value)) {
+			
 			}
-			else {
-				document.getElementById('errorPassword2').innerHTML = '';
-			}
-			
-			
-			
 			if (mobile.value.trim() == '') {
 				document.getElementById('errorMobile').innerHTML = 'Vui lòng nhập số điện thoại';
 			}
